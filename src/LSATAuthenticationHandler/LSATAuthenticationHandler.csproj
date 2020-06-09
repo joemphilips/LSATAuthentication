@@ -5,6 +5,8 @@
     <LangVersion>8.0</LangVersion>
     <Nullable>enable</Nullable>
     <RootNamespace>LSATAuthenticationHandler</RootNamespace>
+    <PackageId>LSATAuthenticationHandler</PackageId>
+    <PackageDescription>Authentication middleware for "402: payment required"</PackageDescription>
   </PropertyGroup>
 
   <ItemGroup>
