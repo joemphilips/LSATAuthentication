@@ -1,0 +1,30 @@
+name: publish(master)
+on:
+  push:
+    branches:
+      - master
+      - 'nightly*' # to workaround regular publishing process
+
+jobs:
+  pack_and_push:
+    name: "publish "
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-18.04]
+        dotnet: ['3.1.200']
+      fail-fast: true
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: recursive
+      - name: Setup 3.1.200 .NET Core
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 3.1.200
+
+      - name: pack and push to nuget
+        if: ${{ secrets.NUGET_API_KEY }}
+        run: |
+          dotnet pack -p:Configuration=Release src/LSATAuthenticationHandler --version-suffix date`date +%Y%m%d-%H%M`.git-`echo $GITHUB_SHA | cut -c 1-7`-${{ matrix.RID }}
+          dotnet nuget push ./src/LSATAuthenticationHandler/bin/Release/LSATAuthenticationHandler.*.nupkg -k ${{ secrets.NUGET_API_KEY }} -s https://api.nuget.org/v3/index.json

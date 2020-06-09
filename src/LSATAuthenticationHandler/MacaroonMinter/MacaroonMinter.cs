@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using DotNetLightning.Payment;
+using DotNetLightning.Payment.LSAT;
 using DotNetLightning.Utils;
 using Macaroons;
-using DotNetLightning.Payment.LSAT;
-using LSATAuthenticationHandler.MacaroonMinter;
 
-namespace NRustLightning.Server.Authentication.MacaroonMinter
+namespace LSATAuthenticationHandler.MacaroonMinter
 {
     /// <summary>
     /// Creates and verifies LSAT-compliant macaroon.

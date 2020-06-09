@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LSATAuthenticationHandler",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LSATAuthentication.Server", "src\LSATAuthentication.Server\LSATAuthentication.Server.csproj", "{C81CDEFB-B97C-4E71-9ADE-7503B3FB9C65}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{7057144E-F2B8-45EC-A5F0-1BF2753B5083}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LSATAuthenticationHandler.Tests", "tests\LSATAuthenticationHandler.Tests\LSATAuthenticationHandler.Tests.csproj", "{0AE0024B-86AE-4775-ACC7-DC82B79AEE36}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -46,9 +50,22 @@ Global
 		{C81CDEFB-B97C-4E71-9ADE-7503B3FB9C65}.Release|x64.Build.0 = Release|Any CPU
 		{C81CDEFB-B97C-4E71-9ADE-7503B3FB9C65}.Release|x86.ActiveCfg = Release|Any CPU
 		{C81CDEFB-B97C-4E71-9ADE-7503B3FB9C65}.Release|x86.Build.0 = Release|Any CPU
+		{0AE0024B-86AE-4775-ACC7-DC82B79AEE36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AE0024B-86AE-4775-ACC7-DC82B79AEE36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AE0024B-86AE-4775-ACC7-DC82B79AEE36}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{0AE0024B-86AE-4775-ACC7-DC82B79AEE36}.Debug|x64.Build.0 = Debug|Any CPU
+		{0AE0024B-86AE-4775-ACC7-DC82B79AEE36}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0AE0024B-86AE-4775-ACC7-DC82B79AEE36}.Debug|x86.Build.0 = Debug|Any CPU
+		{0AE0024B-86AE-4775-ACC7-DC82B79AEE36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AE0024B-86AE-4775-ACC7-DC82B79AEE36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AE0024B-86AE-4775-ACC7-DC82B79AEE36}.Release|x64.ActiveCfg = Release|Any CPU
+		{0AE0024B-86AE-4775-ACC7-DC82B79AEE36}.Release|x64.Build.0 = Release|Any CPU
+		{0AE0024B-86AE-4775-ACC7-DC82B79AEE36}.Release|x86.ActiveCfg = Release|Any CPU
+		{0AE0024B-86AE-4775-ACC7-DC82B79AEE36}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{0B5502B8-D2C9-4BBB-AD9B-0FDEBFC56325} = {07FC0ED8-4675-48EB-8CB5-A929F07D97C9}
 		{C81CDEFB-B97C-4E71-9ADE-7503B3FB9C65} = {07FC0ED8-4675-48EB-8CB5-A929F07D97C9}
+		{0AE0024B-86AE-4775-ACC7-DC82B79AEE36} = {7057144E-F2B8-45EC-A5F0-1BF2753B5083}
 	EndGlobalSection
 EndGlobal
